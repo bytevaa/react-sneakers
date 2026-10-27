@@ -1,0 +1,124 @@
+function App() {
+  return (
+    <div className="wrapper clear">
+
+    <div className="overlay">
+      <div className="drawer">
+        <h2>Корзина</h2>
+
+        <div className="cartItem d-flex align-center">
+          <img className="mr-15" width={70} height={70} src="/images/2.jpg" alt="Sneakers" />
+          <div className="mr-20">
+            <p className="mb-5">Мужские Кроссовки Nike Air Max 270</p>
+            <b>12 999 руб.</b>
+          </div>
+          <img className="removeBtn" src="/images/remove.svg" alt="Remove" />
+        </div>
+      </div>
+    </div>
+
+
+      <header className="d-flex justify-between align-center p-40">
+        <div className="d-flex align-center">
+          <img width={40} height={40} src="/images/logo.png" alt="Logo" />
+          <div>
+            <h3 className="text-uppercase">React Sneakers</h3>
+            <p className="opacity-5">Магазин лучших кроссовок</p>
+          </div>
+        </div>
+        <ul className="d-flex">
+          <li className="mr-30">
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M10 0C15.421 0 20 4.579 20 10C20 13.19 18.408 16.0778 16 17.9238V18H15.8984C14.2304 19.245 12.187 20 10 20C7.813 20 5.76956 19.245 4.10156 18H4V17.9238C1.59205 16.0778 0 13.189 0 10C0 4.579 4.579 0 10 0ZM9 14.5732C8.3173 14.5744 7.65497 14.8084 7.12305 15.2363C6.59142 15.6642 6.22158 16.2604 6.07422 16.9268C7.24221 17.6037 8.58402 18 10 18C11.416 18 12.7578 17.6037 13.9258 16.9268C13.7782 16.2603 13.4078 15.6642 12.876 15.2363C12.3441 14.8085 11.6826 14.5746 11 14.5732H9ZM10 2C5.663 2 2 5.663 2 10C2 12.1758 2.92286 14.1817 4.38965 15.6406C4.77109 14.7326 5.41252 13.9578 6.23242 13.4121C7.05242 12.8664 8.01501 12.5745 9 12.5732H11C11.985 12.5745 12.9476 12.8664 13.7676 13.4121C14.5875 13.9578 15.2289 14.7326 15.6104 15.6406C17.0771 14.1817 18 12.1758 18 10C18 5.663 14.337 2 10 2ZM10 4C12.28 4 14 5.72 14 8C14 10.28 12.28 12 10 12C7.72 12 6 10.28 6 8C6 5.72 7.72 4 10 4ZM10 6C8.822 6 8 6.822 8 8C8 9.178 8.822 10 10 10C11.178 10 12 9.178 12 8C12 6.822 11.178 6 10 6Z" fill="#9B9B9B"/>
+            </svg>
+            <span>1205 руб.</span>
+          </li>
+          <li>
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M8.36366 17.3636C8.36366 17.8155 7.99735 18.1818 7.54548 18.1818C7.09361 18.1818 6.72729 17.8155 6.72729 17.3636C6.72729 16.9118 7.09361 16.5455 7.54548 16.5455C7.99735 16.5455 8.36366 16.9118 8.36366 17.3636Z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke="#9B9B9B"/>
+              <path d="M17.3637 17.3636C17.3637 17.8155 16.9973 18.1818 16.5455 18.1818C16.0936 18.1818 15.7273 17.8155 15.7273 17.3636C15.7273 16.9118 16.0936 16.5455 16.5455 16.5455C16.9973 16.5455 17.3637 16.9118 17.3637 17.3636Z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke="#9B9B9B"/>
+              <path d="M1 1H4.27273L6.46545 11.9555C6.54027 12.3321 6.7452 12.6705 7.04436 12.9113C7.34351 13.1522 7.71784 13.2801 8.10182 13.2727H16.0545C16.4385 13.2801 16.8129 13.1522 17.112 12.9113C17.4112 12.6705 17.6161 12.3321 17.6909 11.9555L19 5.09091H5.09091" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke="#9B9B9B"/>
+            </svg>
+          </li>
+        </ul>
+      </header> 
+
+      <div className="content p-40">
+        <div className="d-flex align-center justify-between mb-40">
+          <h1>Все кроссовки</h1>
+          <div className="search-block d-flex">
+            <img src="/images/Group.png" alt="Search"/>
+            <input placeholder="Поиск ..." />
+          </div>
+        </div>
+
+        <div className="d-flex ">
+          <div className="card">
+            <div className="favorite">
+              <img src="images/unheart.svg" alt="Unliked" />
+            </div>
+            <img width={133} height={112} src="/images/1.jpg" alt="Nike Blazer" />
+            <h5>Мужские Кроссовки Nike Blazer Mid Suede</h5>
+            <div className="d-flex justify-between align-center">
+              <div className="d-flex flex-column">
+                <span>Цена:</span>
+                <b>12 999 руб.</b>
+              </div>
+              <button className="button">
+                <img width={11} height={11} src="/images/plus.svg" alt="Plus" />
+              </button>
+            </div>
+          </div>
+
+          <div className="card">
+            <img width={133} height={112} src="/images/2.jpg" alt="Nike Blazer" />
+            <h5>Мужские Кроссовки Nike Blazer Mid Suede</h5>
+            <div className="d-flex justify-between align-center">
+              <div className="d-flex flex-column">
+                <span>Цена:</span>
+                <b>12 999 руб.</b>
+              </div>
+              <button className="button">
+                <img width={11} height={11} src="/images/plus.svg" alt="Plus" />
+              </button>
+            </div>
+          </div>
+
+          <div className="card">
+            <img width={133} height={112} src="/images/3.jpg" alt="Nike Blazer" />
+            <h5>Мужские Кроссовки Nike Blazer Mid Suede</h5>
+            <div className="d-flex justify-between align-center">
+              <div className="d-flex flex-column">
+                <span>Цена:</span>
+                <b>12 999 руб.</b>
+              </div>
+              <button className="button">
+                <img width={11} height={11} src="/images/plus.svg" alt="Plus" />
+              </button>
+            </div>
+          </div>
+
+
+                <div className="card">
+            <img width={133} height={112} src="/images/4.jpg" alt="Nike Blazer" />
+            <h5>Мужские Кроссовки Nike Blazer Mid Suede</h5>
+            <div className="d-flex justify-between align-center">
+              <div className="d-flex flex-column">
+                <span>Цена:</span>
+                <b>12 999 руб.</b>
+              </div>
+              <button className="button">
+                <img width={11} height={11} src="/images/plus.svg" alt="Plus" />
+              </button>
+            </div>
+          </div>
+ 
+
+
+        </div>
+      </div>
+    </div>
+  );
+}
+
+export default App;
